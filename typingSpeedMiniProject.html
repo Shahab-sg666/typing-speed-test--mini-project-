@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Mini Project</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: vazir;
+            font-size: 16px;
+        }
+        
+        main {
+            width: 100%;
+            margin-bottom: 8rem;
+        }
+        
+        nav {
+            background-color: rgb(21, 69, 53);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        article {
+            background-color: rgb(63, 13, 110);
+            padding: 50px 300px;
+            text-align: center;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        .pattern {
+            margin-block: 2rem;
+            margin-inline: 21%;
+            font-size: 1rem;
+        }
+        
+        #origin-text p {
+            width: 900px;
+            padding: 1rem 0.5rem;
+            margin: 1rem 0;
+            background-color: rgb(222, 222, 222);
+            border: none;
+            direction: ltr;
+            font-size: 1.2rem;
+        }
+        
+        textarea {
+            border: 4px solid #b5b5b5;
+            direction: ltr;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+            width: 44.8rem;
+            height: 5rem;
+            outline: none;
+        }
+        
+        .meta {
+            width: 100%;
+            max-width: 930px;
+            padding-right: 3rem;
+            padding-left: 1rem;
+            margin-inline: auto;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        #reset {
+            padding: 0.5rem 1.5rem;
+            font-family: vazir;
+        }
+        
+        .timer {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        
+        <nav>
+            <h1>تست سنجش سرعت تایپ</h1>
+        </nav>
+        
+        <article>
+            <p>فرآیند سنجش سرعت تایپ بدین گونه است که با شروع تایپ کاربر تایمر شروع به شمارش زمان میکند!!! و با تایپ هر حرف توسط کاربر مطابقت متن کاربر با متن نمایش داده شده چک میشود</p>
+        </article>
+        
+        <div class="pattern">
+            <label for="">متن الگو :</label> <br />
+            
+            <div id="origin-text">
+                <p>the text to test.</p>
+            </div>
+            
+            <div class="test-wrapper">
+                <textarea name="" id="test-area" placeholder="با تایپ اولین حرف تایمر شمارش را آغاز میکند"></textarea>
+            </div>
+        </div>
+        
+        <div class="meta">
+            <button id="reset">از نو</button>
+            
+            <section id="clock">
+                <div class="timer">00:00:00</div>
+            </section>
+        </div>
+    </main>
+    
+    <script src="JavaScript/scriptTypingSpeedMiniProject.js"></script>
+</body>
+</html>
